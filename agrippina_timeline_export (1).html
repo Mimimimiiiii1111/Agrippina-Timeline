@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Basic website info -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agrippina the Younger timeline</title>
+
+  <!-- Design -->
+  <style>
+    /* Page and font spacing */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 24px;
+    }
+
+    /* Website name and subheading */
+    header {
+      text-align: center;
+      margin-bottom: 32px;
+    }
+
+    /* Timeline layout and centered line */
+    .timeline {
+      position: relative;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .timeline-line {
+      position: absolute;
+      left: 50%;
+      top: 0;
+      bottom: 0;
+      width: 2px;
+      background: currentColor;
+      transform: translateX(-50%);
+    }
+
+    /* Timeline event positioning */
+    .event {
+      position: relative;
+      box-sizing: border-box;
+      width: 50%;
+      padding: 24px;
+      margin-bottom: 58px;
+
+      /* Scroll animation */
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+
+    /* Events become visible when scrolled into view */
+    .event.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Alternate left and right cards */
+    .event.left {
+      margin-right: auto;
+      text-align: right;
+    }
+
+    .event.right {
+      margin-left: auto;
+      text-align: left;
+    }
+
+    /* Dots on timeline */
+    .event:after {
+      content: "";
+      position: absolute;
+      top: 28px;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: currentColor;
+    }
+
+    .event.left:after {
+      right: -6px;
+    }
+
+    .event.right:after {
+      left: -6px;
+    }
+
+    /* Individual event cards */
+    .event-card {
+      display: inline-block;
+      max-width: 390px;
+      width: 100%;
+      box-sizing: border-box;
+      text-align: left;
+      padding: 16px;
+      border: 1px solid currentColor;
+      border-radius: 8px;
+    }
+
+    /* Learn more button and dropdown */
+    .event-card details {
+      margin-top: 14px;
+      border-top: 1px solid currentColor;
+      padding-top: 10px;
+    }
+
+    .event-card summary {
+      cursor: pointer;
+      font-weight: bold;
+      padding: 6px 0;
+    }
+
+    /* Inside Learn more text */
+    .more-content {
+      margin-top: 10px;
+      padding: 14px;
+      border: 1px solid currentColor;
+      border-radius: 6px;
+      line-height: 1.55;
+    }
+
+    /* About and sources sections */
+    .about-section,
+    .sources-section {
+      max-width: 900px;
+      margin: 60px auto;
+      padding: 24px;
+      border: 1px solid currentColor;
+      border-radius: 8px;
+    }
+
+    .about-section p,
+    .sources-section p {
+      line-height: 1.6;
+    }
+
+    /* Phone layout */
+    @media (max-width: 650px) {
+      body {
+        padding: 16px;
+      }
+
+      .timeline-line {
+        left: 12px;
+      }
+
+      .event,
+      .event.left,
+      .event.right {
+        width: 100%;
+        margin: 0 0 34px;
+        padding: 20px 0 20px 36px;
+        text-align: left;
+      }
+
+      .event.left:after,
+      .event.right:after {
+        left: 6px;
+        right: auto;
+      }
+
+      .event-card {
+        max-width: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Website header -->
+  <header>
+    <h1>Agrippina the Younger</h1>
+    <p>(AD 15–59)</p>
+  </header>
+
+  <!-- Start of timeline -->
+  <main class="timeline">
+
+    <!-- Vertical line down the timeline -->
+    <div class="timeline-line" aria-hidden="true"></div>
+
+    <!-- Event 1: Birth and family -->
+    <section class="event left">
+      <article class="event-card">
+        <div class="event-card-content">
+          <h2>Birth and family</h2>
+          <p><strong>Date:</strong> 6 November AD 15</p>
+          <p>Agrippina the Younger was born in Ara Ubiorum, which was a Roman settlement in Germania Inferior. It's near modern-day Cologne, Germany. She belonged to the Julio-Claudian dynasty, Rome's first imperial family.</p>
+
+          <details>
+            <summary>Learn more</summary>
+            <div class="more-content">
+              <p>Her father was Germanicus, a popular Roman general. Her mother, Agrippina the Elder, was a granddaughter of Augustus, Rome's first emperor. She was the sister of Caligula, who became emperor in AD 37.</p>
+              <p><strong>Sources:</strong> [1], [2], [9]</p>
+            </div>
+          </details>
+        </div>
+      </article>
+    </section>
+
+    <!-- Event 2: Family history -->
+    <section class="event right">
+      <article class="event-card">
+        <div class="event-card-content">
+          <h2>Family history</h2>
+          <p><strong>Date:</strong> AD 19–33</p>
+          <p>Agrippina grew up during a period of political conflict within the imperial family. Her father died when she was young, and later her mom and older brothers were persecuted by Emperor Tiberius.</p>
+
+          <details>
+            <summary>Learn more</summary>
+            <div class="more-content">
+              <p>Germanicus died in AD 19 at Antioch. Agrippina the Elder was exiled and died in AD 33. Her brothers Nero Caesar and Drusus Caesar also died after being imprisoned.</p>
+              <p><strong>Sources:</strong> [1], [2], [3]</p>
+            </div>
+          </details>
+        </div>
+      </article>
+    </section>
+
+    <!-- Event 3: Marriage and her son Nero -->
+    <section class="event left">
+      <article class="event-card">
+        <div class="event-card-content">
+          <h2>Marriage and her son Nero</h2>
+          <p><strong>Date:</strong> AD 28–37</p>
+          <p>Agrippina married Gnaeus Domitius Ahenobarbus and had a son, Lucius Domitius Ahenobarbus, who was later known as Emperor Nero.</p>
+
+          <details>
+            <summary>Learn more</summary>
+            <div class="more-content">
+              <p>Agrippina was around 13 when the marriage took place. Nero was born on December 15, AD 37. Nero's future would become a major focus of her political ambitions.</p>
+              <p><strong>Sources:</strong> [1], [2], [3]</p>
+            </div>
+          </details>
+        </div>
+      </article>
+    </section>
+
+    <!-- Event 4: Exile under Caligula -->
+    <section class="event right">
+      <article class="event-card">
+        <div class="event-card-content">
+          <h2>Exile under Caligula</h2>
+          <p><strong>Date:</strong> AD 37–41</p>
+          <p>When her brother Caligula became emperor, Agrippina at first was a prominent member of the imperial family. In AD 39, she and her sister Julia Livilla were exiled amid accusations of conspiracy.</p>
+
+          <details>
+            <summary>Learn more</summary>
+            <div class="more-content">
+              <p>Caligula ruled from AD 37 to 41. Ancient accounts connect the accusations to a suspected conspiracy involving Marcus Aemilius Lepidus. Claudius allowed Agrippina to return after Caligula's assassination in AD 41.</p>
+              <p><strong>Sources:</strong> [1], [3]</p>
+            </div>
+          </details>
+        </div>
+      </article>
+    </section>
+
+    <!-- Event 5: Marriage to Emperor Claudius -->
+    <section class="event left">
+      <article class="event-card">
+        <div class="event-card-content">
+          <h2>Marriage to Emperor Claudius</h2>
+          <p><strong>Date:</strong> AD 49</p>
+          <p>Agrippina married Emperor Claudius, her maternal uncle, in AD 49. Their marriage was very controversial and was even brought up in the Roman Senate.</p>
+
+          <details>
+            <summary>Learn more</summary>
+            <div class="more-content">
+              <p>Roman law at the time did not allow marriage between an uncle and his niece. The Senate approved a legal change to permit their marriage. Agrippina became empress and gained access to the imperial court.</p>
+              <p><strong>Sources:</strong> [1], [2], [3]</p>
+            </div>
+          </details>
+        </div>
+      </article>
+    </section>
+
+    <!-- Event 6: Augusta and Nero's adoption -->
+    <section class="event right">
+      <article class="event-card">
+        <div class="event-card-content">
+          <h2>The title Augusta and Nero's Adoption</h2>
+          <p><strong>Date:</strong> AD 50</p>
+          <p>Agrippina received the title Augusta and convinced Claudius to adopt Nero, which placed her son in a stronger position to become emperor.</p>
+
+          <details>
+            <summary>Learn more</summary>
+            <div class="more-content">
+              <p>Augusta was an important imperial title. Claudius already had a biological son, Britannicus. Nero became Claudius's adopted son and a candidate for becoming emperor.</p>
+              <p><strong>Sources:</strong> [1], [2], [3], [6]</p>
+            </div>
+          </details>
+        </div>
+      </article>
+    </section>
+
+    <!-- Event 7: Preparing Nero to rule -->
+    <section class="event left">
+      <article class="event-card">
+        <div class="event-card-content">
+          <h2>Preparing Nero to Rule</h2>
+          <p><strong>Date:</strong> Early 50s AD</p>
+          <p>Agrippina helped build Nero's future by having him educated by different advisers. One was the philosopher Seneca, whom she helped return from exile. She also supported Burrus's appointment to strengthen Nero's future.</p>
+
+          <details>
+            <summary>Learn more</summary>
+            <div class="more-content">
+              <p>Seneca became one of Nero's tutors. Sextus Afranius Burrus became commander of the Praetorian Guard. Marcus Antonius Pallas was another court figure associated with Agrippina.</p>
+              <p><strong>Sources:</strong> [2], [3], [8]</p>
+            </div>
+          </details>
+        </div>
+      </article>
+    </section>
+
+    <!-- Event 8: Claudius dies and Nero becomes emperor -->
+    <section class="event right">
+      <article class="event-card">
+        <div class="event-card-content">
+          <h2>Claudius Dies and Nero Becomes Emperor</h2>
+          <p><strong>Date:</strong> October 13, AD 54</p>
+          <p>Claudius died in AD 54, and Nero became emperor. Agrippina held a lot of influence during Nero's early reign.</p>
+
+          <details>
+            <summary>Learn more</summary>
+            <div class="more-content">
+              <p>Ancient historian Tacitus claimed that Claudius was poisoned. Some ancient accounts suggest Agrippina arranged the poisoning, but exactly how Claudius died is uncertain.</p>
+              <p><strong>Sources:</strong> [3], [7]</p>
+            </div>
+          </details>
+        </div>
+      </article>
+    </section>
+
+    <!-- Event 9: Power during Nero's reign -->
+    <section class="event left">
+      <article class="event-card">
+        <div class="event-card-content">
+          <h2>Power during Nero's Reign</h2>
+          <p><strong>Date:</strong> AD 54–55</p>
+          <p>During Nero's early reign, Agrippina appeared in public alongside her son a lot. She had an unusual amount of political influence for a Roman woman during that time period.</p>
+
+          <details>
+            <summary>Learn more</summary>
+            <div class="more-content">
+              <p>She received public honors and was pictured on imperial coins. She had connections with senators, military leaders, and imperial advisers. She had influence without holding an official magistracy.</p>
+              <p><strong>Sources:</strong> [2], [5], [6]</p>
+            </div>
+          </details>
+        </div>
+      </article>
+    </section>
+
+    <!-- Event 10: Relationship with Nero -->
+    <section class="event right">
+      <article class="event-card">
+        <div class="event-card-content">
+          <h2>Relationship with Nero</h2>
+          <p><strong>Date:</strong> AD 55–59</p>
+          <p>Nero wanted to have independence from his mom's influence. As Agrippina lost political support, her relationship with Nero worsened and became a threat to her position.</p>
+
+          <details>
+            <summary>Learn more</summary>
+            <div class="more-content">
+              <p>Nero's advisers and allies changed over time. Agrippina did not have as much influence during his reign. Ancient historians describe a struggle for control of the imperial court.</p>
+              <p><strong>Sources:</strong> [2], [4], [5]</p>
+            </div>
+          </details>
+        </div>
+      </article>
+    </section>
+
+    <!-- Event 11: Agrippina's death -->
+    <section class="event left">
+      <article class="event-card">
+        <div class="event-card-content">
+          <h2>Agrippina's Death</h2>
+          <p><strong>Date:</strong> AD 59</p>
+          <p>Agrippina was killed near Baiae in AD 59, according to ancient accounts, on Nero's orders. Ancient accounts mention an earlier failed attempt involving an arranged boat.</p>
+
+          <details>
+            <summary>Learn more</summary>
+            <div class="more-content">
+              <p>Tacitus writes about the attempted boat incident in dramatic detail. The details of her death come mainly from ancient accounts written after her lifetime.</p>
+              <p><strong>Sources:</strong> [2], [4]</p>
+            </div>
+          </details>
+        </div>
+      </article>
+    </section>
+
+    <!-- Event 12: Agrippina's legacy -->
+    <section class="event right">
+      <article class="event-card">
+        <div class="event-card-content">
+          <h2>Agrippina's Legacy</h2>
+          <p><strong>Date:</strong> After AD 59</p>
+          <p>Agrippina was a big part of Roman political history. During her life she built up a lot of influence as a woman in the imperial court.</p>
+
+          <details>
+            <summary>Learn more</summary>
+            <div class="more-content">
+              <p>She was represented on coins and in portrait sculpture. The settlement where she was born later became the Roman colony Colonia Claudia Ara Agrippinensium. Ancient writers often portrayed her as manipulative and dangerous.</p>
+              <p><strong>Sources:</strong> [2], [5], [9], [10], [11]</p>
+            </div>
+          </details>
+        </div>
+      </article>
+    </section>
+
+  </main>
+  <!-- Timeline end -->
+
+  <!-- Sources section -->
+  <section class="sources-section">
+    <h2>Bibliography</h2>
+    <p>
+      [12] Barrett, Anthony A. Agrippina: Sex, Power, and Politics in the Early Empire. New Haven, CT: Yale University Press, 1996. https://yalebooks.yale.edu/book/9780300078565/agrippina/.
+
+      <br><br>
+      [13] Birch, Kevin Edward. “Agrippina the Younger.” EBSCO Research Starters. Accessed October 24, 2026. https://www.ebsco.com/research-starters/biography/agrippina-younger.
+
+      <br><br>
+      [7] British Museum. “Who Was Nero?” April 22, 2021. https://www.britishmuseum.org/blog/who-was-nero.
+
+      <br><br>
+      [6] British Museum. “Coin.” Collection object R-6509. Accessed October 14, 2026. https://www.britishmuseum.org/collection/object/C_R-6509.
+
+      <br><br>
+      [10] British Museum. “Portrait.” Collection object 1907,0415.1. Accessed October 14, 2026. https://www.britishmuseum.org/collection/object/G_1907-0415-1.
+
+      <br><br>
+      [2] Boatwright, Mary T. Agrippina the Younger: A Dangerous Woman in Rome’s Early Empire. Oxford: Oxford University Press, 2026. https://academic.oup.com/book/63003.
+
+      <br><br>
+      [14] “The Career of the Younger Agrippina.” OhioLINK Electronic Theses and Dissertations. Accessed October 24, 2026. https://etd.ohiolink.edu/acprod/odb_etd/ws/send_file/send?accession=osu1752068758581798&disposition=inline.
+
+      <br><br>
+      [8] “Agrippina – Themes: Seneca and Burrus.” John D. Clare. Accessed October 24, 2026. https://www.johndclare.net/AncientHistory/Agrippina_Themes5.htm.
+
+      <br><br>
+      [15] “Sources on Agrippina the Younger’s Early Life.” John D. Clare. Accessed October 24, 2026. https://vwwv.johndclare.net/AncientHistory/Agrippina_Sources3.html.
+
+      <br><br>
+      [11] Diercke. “Köln (Colonia) – Römerstadt (um 350).” Accessed October 24, 2026. https://diercke.de/content/k%C3%B6ln-colonia-r%C3%B6merstadt-um%C2%0350-978-3-14-100391-8-26-1-1.
+
+      <br><br>
+      [5] Ginsburg, Judith. Representing Agrippina: Constructions of Female Power in the Early Roman Empire. Oxford: Oxford University Press, 2005. https://academic.oup.com/book/47114.
+
+      <br><br>
+      [1] Percy, John. “Lulia Agrippina.” Edited by Lucy Grig. Oxford: Oxford University Press, 2022. URL needs verification: the link originally provided appears to lead to a different book entry, so confirm the correct chapter link before submitting.
+
+      <br><br>
+      [3] Tacitus, Publius Cornelius. The Annals, Book XII. Perseus Digital Library. https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.02.0078%3Abook%3D12.
+
+      <br><br>
+      [4] Tacitus, Publius Cornelius. The Annals, Book XIV. Perseus Digital Library. https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.02.0078%3Abook%3D14.
+
+      <br><br>
+      [9] Uffizi Galleries. “Portrait of Agrippina the Younger.” Accessed October 24, 2026. https://www.uffizi.it/en/artworks/portrait-agrippina-younger.
+    </p>
+  </section>
+
+  <!-- Make scroll animation work -->
+  <script>
+    const events = document.querySelectorAll(".event");
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+          observer.unobserve(entry.target);
+        }
+      });
+    }, {
+      threshold: 0.15
+    });
+
+    events.forEach((event) => {
+      observer.observe(event);
+    });
+  </script>
+
+</body>
+</html>
